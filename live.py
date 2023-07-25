@@ -37,15 +37,15 @@ def load_game():
         else:
             print(f'You have chosen game number {game}.')
             difficulty_level = choose_difficulty()
-            if game == '1':
+            if int(game) == 1:
                 score = play_memory_game(difficulty_level)
                 if score:
                     add_score(difficulty_level)
-            elif game == '2':
+            elif int(game) == 2:
                 score = play_guess_game(difficulty_level)
                 if score:
                     add_score(difficulty_level)
-            elif game == '3':
+            elif int(game) == 3:
                 score = play_currency_roulette_game(difficulty_level)
                 if score:
                     add_score(difficulty_level)
